@@ -5,7 +5,7 @@ export default function SocialMediaButtons(props) {
 	return (
 		<>
 			<FacebookShareButton
-				url={window.location.href}
+				url={"https://www.imgonline.com.ua/examples/random-pixels-big.png"}
 				quote="quote"
 				hashtag="hashtag"
 			>
@@ -16,23 +16,12 @@ export default function SocialMediaButtons(props) {
 				title="title"
 				summary="summary"
 				source="source"
-				url={window.location.href}
+				url={"https://www.imgonline.com.ua/examples/random-pixels-big.png"}
 				quote="quote"
 				hashtag="hashtag"
 			>
 				<LinkedinIcon size={36} />
 			</LinkedinShareButton>
-
-			<TwitterShareButton
-				title="title"
-				summary="summary"
-				source="source"
-				url={window.location.href}
-				quote="quote"
-				hashtag="hashtag"
-			>
-				<TwitterIcon size={36} />
-			</TwitterShareButton>
 		</>
 	);
 }
