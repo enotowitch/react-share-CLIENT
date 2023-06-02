@@ -3,15 +3,14 @@ import { Helmet } from "react-helmet";
 
 export default function HelmetMetaData(props) {
 
-	let currentUrl = "http://www.camperstribe.com";
+	let currentUrl = "http://www.camperstribe.com" + window.location.pathname;
 	let quote = props.quote !== undefined ? props.quote : "";
 	let title = props.title !== undefined ? props.title : "CampersTribe - World is yours to explore";
-	let image = props.image !== undefined ? props.image : "https://www.imgonline.com.ua/examples/random-pixels-big.png";
+	let image = props.image !== undefined ? props.image : "https://storage.googleapis.com/cmperstribe_storage_usha/Banner/IMG_3640.JPG";
 	let description = props.description !== undefined ? props.description : "CampersTribe lets you experience the camping culture. We discover the hidden gems in the nearby to help you connect with nature & yourself by learning in the woods, on the riverbank under the open sky." +
 		"Trust us, its million dollars experience to ride away from city life, pitch a tent, do campfire and endless talk!" +
 		"So, join us on this voyage, and explore the beauty and miracle of being yourself!";
 	let hashtag = props.hashtag !== undefined ? props.hashtag : "#camperstribe";
-
 	return (
 		<Helmet>
 			<title>{title}</title>
