@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import SocialMediaButtons from './components/SocialMediaButtons';
+import HelmetMetaData from './components/HelmetMetaData';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<HelmetMetaData
+				title="123"
+				image="https://www.imgonline.com.ua/examples/random-pixels-big.png"
+			/>
+			<SocialMediaButtons />
+		</>
+	);
 }
 
 export default App;
